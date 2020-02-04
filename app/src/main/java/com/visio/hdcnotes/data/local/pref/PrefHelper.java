@@ -5,4 +5,6 @@ package com.visio.hdcnotes.data.local.pref;
 //
 
 public interface PrefHelper {
+    String getCurrentUserName();
+    boolean setCurrentUserName(String userName);
 }
