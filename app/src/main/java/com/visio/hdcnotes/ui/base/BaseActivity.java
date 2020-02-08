@@ -75,4 +75,13 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
         mViewDataBinding.executePendingBindings();
     }
 
+    @Override
+    public void onFragmentAttached() {
+
+    }
+
+    @Override
+    public void onFragmentDetached(String tag) {
+
+    }
 }
