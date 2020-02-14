@@ -4,5 +4,15 @@ package com.visio.hdcnotes.ui.base;
 // Copyright (c) 2020 VisioApps Technology Pvt. Ltd. All rights reserved.
 //
 
-public class BaseViewHolder {
+import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+public abstract class BaseViewHolder extends RecyclerView.ViewHolder {
+    public BaseViewHolder(@NonNull View itemView) {
+        super(itemView);
+    }
+    public abstract void onBind(int position);
+
 }

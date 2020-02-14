@@ -4,5 +4,6 @@ package com.visio.hdcnotes.ui.main;
 // Copyright (c) 2020 VisioApps Technology Pvt. Ltd. All rights reserved.
 //
 
-public class MainNavigator {
+public interface MainNavigator {
+    void handleError(Throwable throwable);
 }
