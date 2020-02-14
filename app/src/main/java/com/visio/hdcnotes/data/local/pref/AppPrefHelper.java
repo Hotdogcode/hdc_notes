@@ -7,6 +7,8 @@ package com.visio.hdcnotes.data.local.pref;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.visio.hdcnotes.di.PreferenceInfo;
+
 import javax.inject.Inject;
 
 public class AppPrefHelper implements PrefHelper{
@@ -15,7 +17,7 @@ public class AppPrefHelper implements PrefHelper{
     private final SharedPreferences mSharedPref;
 
     @Inject
-    public AppPrefHelper(Context context,String prefFileName){
+    public AppPrefHelper(Context context,@PreferenceInfo String prefFileName){
         mSharedPref = context.getSharedPreferences(prefFileName,Context.MODE_PRIVATE);
     }
 
